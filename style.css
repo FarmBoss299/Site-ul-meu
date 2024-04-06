@@ -26,11 +26,11 @@ input, #re {
     font-family: "Poppins";
     padding-left: 5px;
     outline: none;
-    width: 100%; /* Modificare pentru a umple lățimea containerului */
+    width: calc(100% - 10px); /* Pentru a umple lățimea containerului */
 }
 
 .input-form {
-    max-width: 80%; /* Modificare pentru a mări lățimea formularului */
+    max-width: 90%;
     filter: drop-shadow(0 0 0.75rem rgb(121, 96, 116));
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@ input, #re {
 }
 
 .container {
-    min-height: 100vh; /* Modificare pentru a asigura că întregul conținut este vizibil pe ecrane mici */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,10 +50,11 @@ input, #re {
 
 hr {
     color: white;
-    width: 100%; /* Modificare pentru a umple lățimea containerului */
+    width: 100%; /* Umple lățimea containerului */
     height: 5px;
     outline: none;
     background-color: white;
     border-radius: 10px;
-    margin: 20px 0; /* Spațierea între linii */
+    margin: 20px 0; /* Spațiere între linii */
 }
+
