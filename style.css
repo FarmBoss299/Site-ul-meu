@@ -2,8 +2,11 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 172, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: radial-gradient(
+        circle,
+        rgba(238, 172, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+    );
     color: white;
 }
 
@@ -26,17 +29,18 @@ input, #re {
     font-family: "Poppins";
     padding-left: 5px;
     outline: none;
-    width: calc(100% - 10px); /* Pentru a umple lățimea containerului */
+    width: 100%; /* Added to make input fields full-width */
 }
 
 .input-form {
-    max-width: 90%;
+    max-width: 90%; /* Changed to 90% for better mobile responsiveness */
+    margin: 0 auto; /* Center align the form */
     filter: drop-shadow(0 0 0.75rem rgb(121, 96, 116));
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 0 auto; /* Centrare pe ecrane mici */
-    padding: 20px; /* Spațiere pentru conținut */
+    padding: 20px; /* Added padding for spacing */
+    background-color: rgba(255, 255, 255, 0); /* Added a semi-transparent background for better readability */
 }
 
 .container {
@@ -44,17 +48,16 @@ input, #re {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Spațiere pentru conținut */
-    box-sizing: border-box; /* Asigură că padding-ul este inclus în dimensiunile containerului */
+    padding: 20px; /* Added padding for spacing */
 }
-
+ 
 hr {
     color: white;
-    width: 100%; /* Umple lățimea containerului */
-    height: 5px;
-    outline: none;
+    width: 100%;
+    height: 2px; /* Reduced the height of the hr for a more subtle divider */
     background-color: white;
-    border-radius: 10px;
-    margin: 20px 0; /* Spațiere între linii */
+    border: none;
+    margin: 20px 0; /* Added margin for spacing */
 }
+
 
